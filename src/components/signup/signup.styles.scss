@@ -1,0 +1,17 @@
+.sign-up {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px;
+  background-color: rgb(239, 247, 244);
+  border-radius: 5px;
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .title {
+    margin: 10px 0;
+  }
+}
