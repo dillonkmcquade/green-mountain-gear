@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import bannerPhoto from "../../assets/stowe-mountain-pic.jpg";
 
 export const BannerContainer = styled.div`
   display: flex;
   justify-content: center;
   background-position: center;
   background-size: cover;
-  background-image: url(https://www.lookslikefilm.com/wp-content/uploads/2019/03/Celestine-Aerden.jpg);
+  background-image: url(${bannerPhoto});
   width: 100%;
   height: 600px;
   @media screen and (max-width: 800px) {
