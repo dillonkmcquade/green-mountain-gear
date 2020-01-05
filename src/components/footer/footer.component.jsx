@@ -25,7 +25,7 @@ const Footer = () => {
     <FooterContainer>
       <span>
         © 2020 Green Mountain Gear |{" "}
-        <LinkContainer href="www.github.com/dillonkmcquade">
+        <LinkContainer href="https://www.github.com/dillonkmcquade">
           Site by Dillon McQuade
         </LinkContainer>
       </span>
