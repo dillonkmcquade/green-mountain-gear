@@ -6,57 +6,66 @@ const SHOP_DATA = {
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
-        price: 25
+        name: "Spot Headlamp",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9001128001566/5061168-OCT03.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 50
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
-        price: 18
+        name: "Eggen Knife",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8947379470366/5059524-NOC02.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 136
       },
       {
         id: 3,
-        name: "Brown Cowboy",
-        imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
-        price: 35
+        name: "Trekking Poles",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9003651956766/6000518-PIC00.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 110
       },
       {
         id: 4,
-        name: "Grey Brim",
-        imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
-        price: 25
+        name: "Nalgene 500ml",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8812156583966/5018501-BL000.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 13
       },
       {
         id: 5,
-        name: "Green Beanie",
-        imageUrl: "https://i.ibb.co/YTjW3vF/green-beanie.png",
-        price: 18
+        name: "Nalgene 1.4l",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8812185714718/5035388-GYY00.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 17
       },
       {
         id: 6,
-        name: "Palm Tree Cap",
-        imageUrl: "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
-        price: 14
+        name: "Katadyn pump filter",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8947899498526/5057941-CLR16.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 110
       },
       {
         id: 7,
-        name: "Red Beanie",
-        imageUrl: "https://i.ibb.co/bLB646Z/red-beanie.png",
-        price: 18
+        name: "Katadyn BeFree",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8846984675358/5051156-CLR00.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 50
       },
       {
         id: 8,
-        name: "Wolf Cap",
-        imageUrl: "https://i.ibb.co/1f2nWMM/wolf-cap.png",
-        price: 14
+        name: "MSR PocketRocket",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8853205909534/5052345-NOC02.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 60
       },
       {
         id: 9,
-        name: "Blue Snapback",
-        imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
-        price: 16
+        name: "MSR Alpine 2 Set",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8812509921310/5018608-NOC02.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 65
       }
     ]
   },
@@ -67,51 +76,59 @@ const SHOP_DATA = {
     items: [
       {
         id: 10,
-        name: "Adidas NMD",
-        imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
-        price: 220
+        name: "Salomon Quest 4D",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8901457543198/5056424-PHA04.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 290
       },
       {
         id: 11,
-        name: "Adidas Yeezy",
-        imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
-        price: 280
+        name: "Oboz Bridger Mid",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8807675592734/5033549-SUD00.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 210
       },
       {
         id: 12,
-        name: "Black Converse",
-        imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
-        price: 110
+        name: "Merrell Moab 2",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8879417655326/5051643-EAH00.jpg?w=300&h=300&auto=format&q=40&fit=fill&bg=FFF",
+        price: 180
       },
       {
         id: 13,
-        name: "Nike White AirForce",
-        imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
-        price: 160
+        name: "Scarpa SL Active",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9003318804510/5062476-BOR00.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 390
       },
       {
         id: 14,
-        name: "Nike Red High Tops",
-        imageUrl: "https://i.ibb.co/QcvzydB/nikes-red.png",
-        price: 160
+        name: "Vasque St. Elias FG",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9020076589086/5062976-CNG00.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 240
       },
       {
         id: 15,
-        name: "Nike Brown High Tops",
-        imageUrl: "https://i.ibb.co/fMTV342/nike-brown.png",
-        price: 160
+        name: "Scarpa Zodiac",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9021999644702/5062497-SHK04.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 330
       },
       {
         id: 16,
-        name: "Air Jordan Limited",
-        imageUrl: "https://i.ibb.co/w4k6Ws9/nike-funky.png",
-        price: 190
+        name: "Scarpa Kinesis Pro",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9021999611934/5062478-EBN00.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 420
       },
       {
         id: 17,
-        name: "Timberlands",
-        imageUrl: "https://i.ibb.co/Mhh6wBg/timberlands.png",
-        price: 200
+        name: "Zamberlan Tofane",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8808154955806/5024120-WXB01.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 460
       }
     ]
   },
@@ -122,33 +139,38 @@ const SHOP_DATA = {
     items: [
       {
         id: 18,
-        name: "Black Jean Shearling",
-        imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
-        price: 125
+        name: "Patagonia R1",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9078489120798/5062758-FRE00.jpg?w=600&h=600&auto=format&q=40&fit=fill&bg=FFF",
+        price: 200
       },
       {
         id: 19,
-        name: "Blue Jean Jacket",
-        imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
-        price: 90
+        name: "Patagonia Better Sweater",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9045759459358/6001426-SWH00.jpg?w=600&h=600&auto=format&q=40&fit=fill&bg=FFF",
+        price: 170
       },
       {
         id: 20,
-        name: "Grey Jean Jacket",
-        imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
-        price: 90
+        name: "Rab Infinity Jkt",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9050148012062/6002502-RDC01.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 625
       },
       {
         id: 21,
-        name: "Brown Shearling",
-        imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
-        price: 165
+        name: "Arc'Teryx Beta AR",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9048624824350/6001105-NEP22.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 700
       },
       {
         id: 22,
-        name: "Tan Trench",
-        imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
-        price: 185
+        name: "Fjallraven Keb Trousers",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9018935803934/5062906-BLG05.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 250
       }
     ]
   },
@@ -159,45 +181,52 @@ const SHOP_DATA = {
     items: [
       {
         id: 23,
-        name: "Blue Tanktop",
-        imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
-        price: 25
+        name: "MSR Elixir 2",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8984652415006/5058188-NOC02.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 320
       },
       {
         id: 24,
-        name: "Floral Blouse",
-        imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
-        price: 20
+        name: "Nemo Hornet 2",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/9025390411806/5064345-BLF06.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 500
       },
       {
         id: 25,
-        name: "Floral Dress",
-        imageUrl: "https://i.ibb.co/KV18Ysr/floral-skirt.png",
-        price: 80
+        name: "BA Fly Creek HV UL 2",
+        imageUrl:
+          "https://mec.imgix.net/medias/sys_master/high-res/high-res/8950590570526/5046210-OLV54.jpg?w=600&h=600&auto=format&q=60&fit=fill&bg=FFF",
+        price: 540
       },
       {
         id: 26,
-        name: "Red Dots Dress",
-        imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
-        price: 80
+        name: "Marmot Limelight 2",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/MAR/MAR00SX/X001.jpg",
+        price: 270
       },
       {
         id: 27,
-        name: "Striped Sweater",
-        imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
-        price: 45
+        name: "Hyperlite Ultramid 2",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/HMG/HMG000Q/WH.jpg",
+        price: 715
       },
       {
         id: 28,
-        name: "Yellow Track Suit",
-        imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
-        price: 135
+        name: "MSR Hubba 1",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/CAS/CAS00F6/RD.jpg",
+        price: 380
       },
       {
         id: 29,
-        name: "White Blouse",
-        imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
-        price: 20
+        name: "NEMO Dragonfly 1",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/NEM/NEM008A/ONECOL.jpg",
+        price: 360
       }
     ]
   },
@@ -208,39 +237,45 @@ const SHOP_DATA = {
     items: [
       {
         id: 30,
-        name: "Camo Down Vest",
-        imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
-        price: 325
+        name: "Hyperlite Windrider 3400",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/HMG/HMG0005/BK.jpg",
+        price: 365
       },
       {
         id: 31,
-        name: "Floral T-shirt",
-        imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
-        price: 20
+        name: "Deuter Guide 45+",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/DTR/DTR004X/CRA.jpg",
+        price: 180
       },
       {
         id: 32,
-        name: "Black & White Longsleeve",
-        imageUrl: "https://i.ibb.co/55z32tw/long-sleeve.png",
-        price: 25
+        name: "Deuter Aircontact 65+10",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/DTR/DTR008R/MID.jpg",
+        price: 285
       },
       {
         id: 33,
-        name: "Pink T-shirt",
-        imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
-        price: 25
+        name: "Deuter Trail Pro 36",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/DTR/DTR008D/BLA.jpg",
+        price: 165
       },
       {
         id: 34,
-        name: "Jean Long Sleeve",
-        imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
-        price: 40
+        name: "Gregory Baltoro 65",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/GRE/GRE009D/ONYBK.jpg",
+        price: 300
       },
       {
         id: 35,
-        name: "Burgundy T-shirt",
-        imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
-        price: 25
+        name: "Lowe Alpine Cerro Torre",
+        imageUrl:
+          "https://content.backcountry.com/images/items/900/LWA/LWA006Q/DAROV.jpg",
+        price: 270
       }
     ]
   }
