@@ -15,7 +15,9 @@ import {
   ButtonsContainer
 } from "./navigation.styles";
 
+
 const Navigation = ({ currentUser, hidden }) => {
+  
   return (
     <NavigationContainer>
       {/* LOGO  */}
