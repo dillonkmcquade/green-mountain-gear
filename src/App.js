@@ -6,8 +6,13 @@ import { setCurrentUser } from "./redux/user/user.actions";
 import ShopPage from "./pages/shop/shop.component";
 import Navigation from "./components/navigation/navigation.component";
 import SignInSignUp from "./pages/signin-signup/signin-signup.componenet";
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import {
+  auth,
+  createUserProfileDocument,
+  addCollectionAndDocuments
+} from "./firebase/firebase.utils";
 import { selectCurrentUser } from "./redux/user/user.selectors";
+import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import { GlobalStyle } from "./global.styles";
 
@@ -18,7 +23,7 @@ class App extends React.Component {
 
   /* FIREBASE CODE -- checks if current user is in database and sets currentUser state accordingly */
   componentDidMount() {
-    const { setCurrentUser } = this.props;
+    const { setCurrentUser, collectionArray } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
@@ -32,6 +37,10 @@ class App extends React.Component {
       } else {
         setCurrentUser(userAuth);
       }
+      addCollectionAndDocuments(
+        "collections",
+        collectionArray.map(({ title, items }) => ({ title, items }))
+      );
     });
   }
 
@@ -48,7 +57,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
-          
+
           <Route
             exact
             path="/signin"
@@ -65,7 +74,8 @@ class App extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  currentUser: selectCurrentUser(state)
+  currentUser: selectCurrentUser(state),
+  collectionArray: selectCollectionsForPreview(state)
 });
 
 const mapDispatchToProps = dispatch => ({
