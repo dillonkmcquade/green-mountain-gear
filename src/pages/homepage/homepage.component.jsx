@@ -1,13 +1,18 @@
-import React from "react";
-import Directory from "../../components/directory/directory.component";
-import Banner from "../../components/banner/banner.component";
+import React, { lazy, Suspense } from "react";
 import { HomePageContainer } from "./homepage.styles";
+import LazySpinner from "../../components/lazySpinner/lazy-spinner.component";
 
+const Banner = lazy(() => import("../../components/banner/banner.component"));
+const Directory = lazy(() =>
+  import("../../components/directory/directory.component")
+);
 const HomePage = () => {
   return (
     <HomePageContainer>
-      <Banner className="banner" />
-      <Directory className="pa3" />
+      <Suspense fallback={<LazySpinner />}>
+        <Banner className="banner" />
+        <Directory className="pa3" />
+      </Suspense>
     </HomePageContainer>
   );
 };
