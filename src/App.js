@@ -9,12 +9,16 @@ import { GlobalStyle } from "./global.styles";
 import Footer from "./components/footer/footer.component";
 import LazySpinner from "./components/lazySpinner/lazy-spinner.component";
 
+
+
 const HomePage = lazy(() => import("./pages/homepage/homepage.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.component"));
 const SignInSignUp = lazy(() =>
   import("./pages/signin-signup/signin-signup.componenet")
 );
 const CheckoutPage = lazy(() => import("./pages/checkout/checkout.component"));
+
+
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -45,13 +49,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <GlobalStyle />
-        {/* NAVIGATION BAR AND BODY ROUTING BELOW */}
+        <GlobalStyle /> {/* required to enable styled-components library */}
         <Navigation className="nav" />
         <Switch>
           <Suspense fallback={<LazySpinner />}>
             <Route exact path="/" component={HomePage} />
-
             <Route path="/shop" component={ShopPage} />
             <Route
               exact
