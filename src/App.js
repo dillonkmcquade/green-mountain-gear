@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -9,8 +9,6 @@ import { GlobalStyle } from "./global.styles";
 import Footer from "./components/footer/footer.component";
 import LazySpinner from "./components/lazySpinner/lazy-spinner.component";
 
-
-
 const HomePage = lazy(() => import("./pages/homepage/homepage.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.component"));
 const SignInSignUp = lazy(() =>
@@ -18,15 +16,10 @@ const SignInSignUp = lazy(() =>
 );
 const CheckoutPage = lazy(() => import("./pages/checkout/checkout.component"));
 
-
-
-class App extends React.Component {
-  unsubscribeFromAuth = null;
-
+const App = ({ setCurrentUser, currentUser }) => {
   /* FIREBASE CODE -- checks if current user is in database and sets currentUser state accordingly */
-  componentDidMount() {
-    const { setCurrentUser } = this.props;
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+  useEffect(() => {
+    const unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
 
@@ -39,37 +32,34 @@ class App extends React.Component {
       } else {
         setCurrentUser(userAuth);
       }
+      return () => {
+        unsubscribeFromAuth();
+      };
     });
-  }
+  }, [setCurrentUser]);
 
-  componentWillUnmount() {
-    this.unsubscribeFromAuth();
-  }
-
-  render() {
-    return (
-      <div className="app">
-        <GlobalStyle /> {/* required to enable styled-components library */}
-        <Navigation className="nav" />
-        <Switch>
-          <Suspense fallback={<LazySpinner />}>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/shop" component={ShopPage} />
-            <Route
-              exact
-              path="/signin"
-              render={() =>
-                this.props.currentUser ? <Redirect to="/" /> : <SignInSignUp />
-              }
-            />
-            <Route path="/checkout" component={CheckoutPage} />
-          </Suspense>
-        </Switch>
-        <Footer />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="app">
+      <GlobalStyle /> {/* required to enable styled-components library */}
+      <Navigation className="nav" />
+      <Switch>
+        <Suspense fallback={<LazySpinner />}>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/shop" component={ShopPage} />
+          <Route
+            exact
+            path="/signin"
+            render={() =>
+              currentUser ? <Redirect to="/" /> : <SignInSignUp />
+            }
+          />
+          <Route path="/checkout" component={CheckoutPage} />
+        </Suspense>
+      </Switch>
+      <Footer />
+    </div>
+  );
+};
 
 const mapStateToProps = state => ({
   currentUser: selectCurrentUser(state)
