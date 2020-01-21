@@ -1,9 +1,8 @@
+import {shallow, mount, render} from 'enzyme';
+import Footer from './components/footer/footer.component';
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+it('expect 1 component', () => {expect(shallow(<Footer />).length).toEqual(1)})
+
+
