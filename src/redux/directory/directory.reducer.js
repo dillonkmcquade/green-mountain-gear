@@ -19,7 +19,7 @@ const INITIAL_STATE = {
     {
       title: "FOOTWEAR",
       imageUrl:
-        "http://comfortworkboots.com/wp-content/uploads/2017/06/2-Pairs-of-Hiking-Boots.jpg",
+        "https://comfortworkboots.com/wp-content/uploads/2017/06/2-Pairs-of-Hiking-Boots.jpg",
       size: "small",
       id: 3,
       linkUrl: "shop/footwear"
