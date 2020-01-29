@@ -19,7 +19,7 @@ const INITIAL_STATE = {
     {
       title: "FOOTWEAR",
       imageUrl:
-        "https://comfortworkboots.com/wp-content/uploads/2017/06/2-Pairs-of-Hiking-Boots.jpg",
+        "https://www.switchbacktravel.com/sites/default/files/articles%20/Hiking%20Boots%20Round-up%20%28m%29.jpg",
       size: "small",
       id: 3,
       linkUrl: "shop/footwear"
